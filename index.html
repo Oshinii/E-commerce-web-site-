@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pink Boutique</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <div class="brand">Bloom & Co.</div>
+        <button class="menu-toggle" aria-label="Open navigation menu">☰</button>
+
+        <nav class="nav-links">
+          <a href="#home">Home</a>
+          <a href="#collection">Collection</a>
+          <a href="#sales">Sales</a>
+          <a href="#contact">Contact Us</a>
+          <a href="admin.html" id="adminNavLink" class="hidden">Admin</a>
+        </nav>
+
+        <div class="nav-actions">
+          <a href="wishlist.html">Wishlist</a>
+          <a href="cart.html">Cart</a>
+          <a href="account.html">Account</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Elegant • Soft • Contemporary</p>
+            <h1>One page design that feels graceful, warm, and memorable.</h1>
+            <p class="hero-text">
+              This layout is structured to match a premium brand-style landing page with a gentle baby pink palette and placeholder image areas ready for your final assets.
+            </p>
+            <div class="hero-actions">
+              <a href="kidswear.html" class="btn primary">Shop Now</a>
+              <a href="#contact" class="btn secondary">Get in Touch</a>
+            </div>
+          </div>
+
+          <div class="hero-card">
+            <img src="uploads/hero-placeholder.svg" alt="Hero banner" class="hero-image" />
+            <div class="hero-badge">New Collection</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section accent" id="collection">
+        <div class="container">
+          <div class="section-heading center">
+            <p class="eyebrow">Collection</p>
+            <h2>Featured products and signature styles</h2>
+          </div>
+
+          <div class="card-grid">
+            <article class="info-card">
+              <h3><a href="kidswear.html">Kids wear</a></h3>
+              <p>Highlight your visual identity with elegant layout blocks and subtle spacing.</p>
+            </article>
+            <article class="info-card">
+              <h3><a href="accessories.html">Accessories</a></h3>
+              <p>Feature product categories, best sellers, or story-driven sections.</p>
+            </article>
+            <article class="info-card">
+              <h3><a href="#sales">Sales</a></h3>
+              <p>Finish with a clear call to action so visitors know how to reach you.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="sales">
+        <div class="container">
+          <div class="section-heading center">
+            <p class="eyebrow">Sales</p>
+            <h2>Promotional items and special offers</h2>
+          </div>
+
+          <div class="gallery-grid">
+            <div class="gallery-item placeholder">Image 1</div>
+            <div class="gallery-item placeholder">Image 2</div>
+            <div class="gallery-item placeholder">Image 3</div>
+            <div class="gallery-item placeholder">Image 4</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section testimonial" id="contact">
+        <div class="container contact-panel">
+          <div>
+            <p class="eyebrow">Contact</p>
+            <h2>Let your audience connect with you</h2>
+            <p>
+              Replace this content with your business details, social links, or appointment info once the backend is added.
+            </p>
+          </div>
+          <form class="contact-form">
+            <input type="text" placeholder="Your Name" />
+            <input type="email" placeholder="Email Address" />
+            <textarea rows="4" placeholder="Your message"></textarea>
+            <button type="button" class="btn primary">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <p>&copy; 2026 Bloom & Co.™ All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

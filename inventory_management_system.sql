@@ -1,0 +1,97 @@
+-- Firebase Firestore design for an Inventory Management System
+-- This file documents Firestore collections and sample documents.
+-- Use these as the source of truth for app data modeling.
+
+-- /categories/{categoryId}
+-- {
+--   name: "Kids Wear",
+--   description: "Children clothing and accessories",
+--   createdAt: "2026-07-26T00:00:00.000Z",
+--   updatedAt: "2026-07-26T00:00:00.000Z"
+-- }
+
+-- /suppliers/{supplierId}
+-- {
+--   companyName: "Northwind Supplies",
+--   contactName: "Aisha Khan",
+--   email: "aisha@northwind.com",
+--   phone: "+94770000001",
+--   address: "Colombo 03",
+--   createdAt: "2026-07-26T00:00:00.000Z",
+--   updatedAt: "2026-07-26T00:00:00.000Z"
+-- }
+
+-- /products/{productId}
+-- {
+--   sku: "KW-001",
+--   name: "Cotton T-Shirt",
+--   description: "Soft cotton children t-shirt",
+--   categoryId: "categories/cat_001",
+--   supplierId: "suppliers/sup_001",
+--   price: 1490,
+--   costPrice: 980,
+--   reorderLevel: 10,
+--   isActive: true,
+--   createdAt: "2026-07-26T00:00:00.000Z",
+--   updatedAt: "2026-07-26T00:00:00.000Z"
+-- }
+
+-- /customers/{customerId}
+-- {
+--   fullName: "Chamari Fernando",
+--   email: "chamari@example.com",
+--   phone: "+94770000010",
+--   address: "Negombo",
+--   createdAt: "2026-07-26T00:00:00.000Z",
+--   updatedAt: "2026-07-26T00:00:00.000Z"
+-- }
+
+-- /sales/{saleId}
+-- {
+--   customerId: "customers/cus_001",
+--   saleDate: "2026-07-01T10:30:00.000Z",
+--   status: "completed",
+--   createdAt: "2026-07-26T00:00:00.000Z",
+--   updatedAt: "2026-07-26T00:00:00.000Z"
+-- }
+
+-- /sales/{saleId}/items/{itemId}
+-- {
+--   productId: "products/prod_001",
+--   quantity: 2,
+--   unitPrice: 1490,
+--   createdAt: "2026-07-26T00:00:00.000Z",
+--   updatedAt: "2026-07-26T00:00:00.000Z"
+-- }
+
+-- /purchaseOrders/{purchaseOrderId}
+-- {
+--   supplierId: "suppliers/sup_001",
+--   orderDate: "2026-06-20T09:00:00.000Z",
+--   expectedDeliveryDate: "2026-06-27",
+--   status: "received",
+--   createdAt: "2026-07-26T00:00:00.000Z",
+--   updatedAt: "2026-07-26T00:00:00.000Z"
+-- }
+
+-- /purchaseOrders/{purchaseOrderId}/items/{itemId}
+-- {
+--   productId: "products/prod_001",
+--   quantity: 15,
+--   unitCost: 980,
+--   createdAt: "2026-07-26T00:00:00.000Z",
+--   updatedAt: "2026-07-26T00:00:00.000Z"
+-- }
+
+-- /stockTransactions/{stockTransactionId}
+-- {
+--   productId: "products/prod_001",
+--   transactionType: "in",
+--   quantity: 15,
+--   referenceType: "purchaseOrder",
+--   referenceId: "purchaseOrders/po_001",
+--   notes: "Initial stock received",
+--   transactionDate: "2026-06-20T09:00:00.000Z",
+--   createdAt: "2026-07-26T00:00:00.000Z",
+--   updatedAt: "2026-07-26T00:00:00.000Z"
+-- }

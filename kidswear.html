@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kids Wear | Bloom & Co.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <div class="brand">Bloom & Co.</div>
+        <button class="menu-toggle" aria-label="Open navigation menu">☰</button>
+
+        <nav class="nav-links">
+          <a href="index.html#home">Home</a>
+          <a href="index.html#collection">Collection</a>
+          <a href="accessories.html">Accessories</a>
+          <a href="index.html#sales">Sales</a>
+          <a href="index.html#contact">Contact Us</a>
+          <a href="admin.html" id="adminNavLink" class="hidden">Admin</a>
+        </nav>
+
+        <div class="nav-actions">
+          <a href="wishlist.html">Wishlist</a>
+          <a href="cart.html">Cart</a>
+          <a href="account.html">Account</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="page-shell">
+      <div class="container">
+        <section class="section-heading center kidswear-hero">
+          <p class="eyebrow">Kids Wear</p>
+          <h2>Soft, playful, and stylish essentials</h2>
+          <p class="section-copy">Browse a curated collection for boys, girls, baby girls, and baby boys in one polished space.</p>
+        </section>
+
+        <div class="kidswear-categories">
+          <article class="kidswear-category-card">
+            <h3>Boys Wear</h3>
+            <p>Comfort-first pieces for little adventurers.</p>
+          </article>
+          <article class="kidswear-category-card">
+            <h3>Girls Wear</h3>
+            <p>Sweet silhouettes and party-ready styles.</p>
+          </article>
+          <article class="kidswear-category-card">
+            <h3>Baby Girl Wear</h3>
+            <p>Soft layers and adorable details for tiny smiles.</p>
+          </article>
+          <article class="kidswear-category-card">
+            <h3>Baby Boy Wear</h3>
+            <p>Easy comfort and polished style for everyday wear.</p>
+          </article>
+        </div>
+
+        <section class="kidswear-section" id="boysWearSection">
+          <div class="section-heading">
+            <h3>Boys Wear</h3>
+            <p>Fresh picks for active little ones.</p>
+          </div>
+          <div class="product-grid" id="boysWearProducts"></div>
+        </section>
+
+        <section class="kidswear-section" id="girlsWearSection">
+          <div class="section-heading">
+            <h3>Girls Wear</h3>
+            <p>Playful essentials with a graceful finish.</p>
+          </div>
+          <div class="product-grid" id="girlsWearProducts"></div>
+        </section>
+
+        <section class="kidswear-section" id="babyGirlWearSection">
+          <div class="section-heading">
+            <h3>Baby Girl Wear</h3>
+            <p>Soft, gentle styles designed for the sweetest moments.</p>
+          </div>
+          <div class="product-grid" id="babyGirlWearProducts"></div>
+        </section>
+
+        <section class="kidswear-section" id="babyBoyWearSection">
+          <div class="section-heading">
+            <h3>Baby Boy Wear</h3>
+            <p>Simple comfort with a crisp, modern look.</p>
+          </div>
+          <div class="product-grid" id="babyBoyWearProducts"></div>
+        </section>
+
+        <div class="kidswear-section-links">
+          <a href="#boysWearSection" class="btn secondary">Boys Wear</a>
+          <a href="#girlsWearSection" class="btn secondary">Girls Wear</a>
+          <a href="#babyBoyWearSection" class="btn secondary">Baby Boy Wear</a>
+          <a href="#babyGirlWearSection" class="btn secondary">Baby Girl Wear</a>
+        </div>
+
+        <div class="product-grid" id="kidswearFallback" hidden></div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <p>&copy; 2026 Bloom & Co.™ All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

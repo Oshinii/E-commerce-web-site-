@@ -1,0 +1,13 @@
+{
+  "name": "bloom-ecommerce",
+  "version": "1.0.0",
+  "description": "Bloom & Co. E-commerce website with backend API",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "nodemailer": "^6.9.7"
+  }
+}

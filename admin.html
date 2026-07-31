@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Panel | Bloom & Co.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <div class="brand">Bloom & Co.</div>
+        <button class="menu-toggle" aria-label="Open navigation menu">☰</button>
+
+        <nav class="nav-links">
+          <a href="index.html#home">Home</a>
+          <a href="index.html#about">Shop</a>
+          <a href="index.html#services">Collection</a>
+          <a href="index.html#contact">Contact Us</a>
+          <a href="admin.html">Admin</a>
+        </nav>
+
+        <div class="nav-actions">
+          <a href="wishlist.html">Wishlist</a>
+          <a href="cart.html">Cart</a>
+          <a href="account.html">Account</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="page-shell">
+      <div class="container auth-layout">
+        <section class="auth-card admin-card">
+          <div class="auth-panel active admin-panel">
+            <h2>Admin Dashboard</h2>
+            <p class="small-note">Add new shop products directly. Select the category to publish them under Kids wear or Accessories.</p>
+
+            <form id="adminProductForm" class="auth-form admin-product-form">
+              <input type="text" id="productName" placeholder="Product Name" required />
+              <textarea id="productDescription" rows="3" placeholder="Product Description" required></textarea>
+              <input type="text" id="productPrice" placeholder="Price (e.g. 45.00)" required />
+              <input type="file" id="productImage" accept="image/*" required />
+              <select id="productCategory" required>
+                <option value="">Select Category</option>
+                <option value="Kids wear">Kids wear</option>
+                <option value="Accessories">Accessories</option>
+              </select>
+              <select id="productSection" required>
+                <option value="">Select Section</option>
+              </select>
+              <button type="submit" class="btn primary">Add Product</button>
+            </form>
+
+            
+
+          
+                
+<!--
+// Firebase Firestore structure for the Inventory Management System
+// Collections are document-based and use subcollections for nested items.
+
+// /categories/{categoryId}
+// {
+//   name: "Kids Wear",
+//   description: "Children clothing and accessories",
+//   createdAt: "2026-07-26T00:00:00.000Z",
+//   updatedAt: "2026-07-26T00:00:00.000Z"
+// }
+
+// /suppliers/{supplierId}
+// {
+//   companyName: "Northwind Supplies",
+//   contactName: "Aisha Khan",
+//   email: "aisha@northwind.com",
+//   phone: "+94770000001",
+//   address: "Colombo 03",
+//   createdAt: "2026-07-26T00:00:00.000Z",
+//   updatedAt: "2026-07-26T00:00:00.000Z"
+// }
+
+// /products/{productId}
+// {
+//   sku: "KW-001",
+//   name: "Cotton T-Shirt",
+//   description: "Soft cotton children t-shirt",
+//   categoryId: "categories/cat_001",
+//   supplierId: "suppliers/sup_001",
+//   price: 1490,
+//   costPrice: 980,
+//   reorderLevel: 10,
+//   isActive: true,
+//   createdAt: "2026-07-26T00:00:00.000Z",
+//   updatedAt: "2026-07-26T00:00:00.000Z"
+// }
+
+// /customers/{customerId}
+// {
+//   fullName: "Chamari Fernando",
+//   email: "chamari@example.com",
+//   phone: "+94770000010",
+//   address: "Negombo",
+//   createdAt: "2026-07-26T00:00:00.000Z",
+//   updatedAt: "2026-07-26T00:00:00.000Z"
+// }
+
+// /sales/{saleId}
+// {
+//   customerId: "customers/cus_001",
+//   saleDate: "2026-07-01T10:30:00.000Z",
+//   status: "completed",
+//   createdAt: "2026-07-26T00:00:00.000Z",
+//   updatedAt: "2026-07-26T00:00:00.000Z"
+// }
+
+// /sales/{saleId}/items/{itemId}
+// {
+//   productId: "products/prod_001",
+//   quantity: 2,
+//   unitPrice: 1490,
+//   createdAt: "2026-07-26T00:00:00.000Z",
+//   updatedAt: "2026-07-26T00:00:00.000Z"
+// }
+
+// /purchaseOrders/{purchaseOrderId}
+// {
+//   supplierId: "suppliers/sup_001",
+//   orderDate: "2026-06-20T09:00:00.000Z",
+//   expectedDeliveryDate: "2026-06-27",
+//   status: "received",
+//   createdAt: "2026-07-26T00:00:00.000Z",
+//   updatedAt: "2026-07-26T00:00:00.000Z"
+// }
+
+// /purchaseOrders/{purchaseOrderId}/items/{itemId}
+// {
+//   productId: "products/prod_001",
+//   quantity: 15,
+//   unitCost: 980,
+//   createdAt: "2026-07-26T00:00:00.000Z",
+//   updatedAt: "2026-07-26T00:00:00.000Z"
+// }
+
+// /stockTransactions/{stockTransactionId}
+// {
+//   productId: "products/prod_001",
+//   transactionType: "in",
+//   quantity: 15,
+//   referenceType: "purchaseOrder",
+//   referenceId: "purchaseOrders/po_001",
+//   notes: "Initial stock received",
+//   transactionDate: "2026-06-20T09:00:00.000Z",
+//   createdAt: "2026-07-26T00:00:00.000Z",
+//   updatedAt: "2026-07-26T00:00:00.000Z"
+// }
+              -->
+            </div>
+            
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <p>&copy; 2026 Bloom & Co.™ All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

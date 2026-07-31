@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart | Bloom & Co.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <div class="brand">Bloom & Co.</div>
+        <button class="menu-toggle" aria-label="Open navigation menu">☰</button>
+
+        <nav class="nav-links">
+          <a href="index.html#home">Home</a>
+          <a href="index.html#about">Shop</a>
+          <a href="index.html#services">Collection</a>
+          <a href="index.html#contact">Contact Us</a>
+          <a href="admin.html" id="adminNavLink" class="hidden">Admin</a>
+        </nav>
+
+        <div class="nav-actions">
+          <a href="wishlist.html">Wishlist</a>
+          <a href="cart.html">Cart</a>
+          <a href="account.html">Account</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="page-shell">
+      <div class="container cart-layout">
+        <section class="cart-items-card">
+          <div class="section-heading">
+            <p class="eyebrow">Your Cart</p>
+            <h2>Shopping Bag</h2>
+          </div>
+
+          <div id="emptyCartMessage" class="empty-state">
+            <h3>Your cart is empty</h3>
+            <p>Start adding products to your cart to see them here.</p>
+          </div>
+
+          <div id="cartItemsContainer" class="cart-items-container"></div>
+        </section>
+
+        <aside class="cart-summary">
+          <h3>Order Summary</h3>
+          <div class="summary-row"><span>Subtotal</span><span id="subtotalValue">$0.00</span></div>
+          <div class="summary-row"><span>Shipping (Free Delivery) </span><span>$.00</span></div>
+          <div class="summary-row total"><span>Total</span><span id="totalValue">$0.00</span></div>
+          <button class="btn primary" type="button">Checkout</button>
+        </aside>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <p>&copy; 2026 Bloom & Co.™ All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
